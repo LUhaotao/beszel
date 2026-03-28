@@ -161,6 +161,15 @@ msgstr "Prilagodite širino glavne postavitve"
 msgid "Admin"
 msgstr "Administrator"
 
+#. System metadata label
+#. System metadata label
+#. System metadata label
+#: src/components/add-system.tsx
+#: src/components/routes/system/info-bar.tsx
+#: src/components/systems-table/systems-table.tsx
+msgid "Administrator"
+msgstr ""
+
 #: src/components/systemd-table/systemd-table.tsx
 msgid "After"
 msgstr "Po"
@@ -199,6 +208,10 @@ msgstr "Vsi kontejnerji"
 #: src/components/systems-table/systems-table.tsx
 msgid "All Systems"
 msgstr "Vsi sistemi"
+
+#: src/components/announcement-banner.tsx
+msgid "Announcement saved"
+msgstr ""
 
 #: src/components/systems-table/systems-table-columns.tsx
 msgid "Are you sure you want to delete {name}?"
@@ -328,6 +341,7 @@ msgstr "Lahko zažene"
 msgid "Can stop"
 msgstr "Lahko ustavi"
 
+#: src/components/announcement-banner.tsx
 #: src/components/routes/settings/alerts-history-data-table.tsx
 #: src/components/routes/settings/quiet-hours.tsx
 #: src/components/systems-table/systems-table-columns.tsx
@@ -375,6 +389,7 @@ msgstr "Možnosti grafikona"
 msgid "Check {email} for a reset link."
 msgstr "Preverite {email} za povezavo za ponastavitev."
 
+#: src/components/announcement-banner.tsx
 #: src/components/routes/settings/layout.tsx
 msgid "Check logs for more details."
 msgstr "Za več podrobnosti preverite dnevnike."
@@ -655,6 +670,7 @@ msgstr "Prenesi"
 msgid "Duration"
 msgstr "Trajanje"
 
+#: src/components/announcement-banner.tsx
 #: src/components/routes/settings/quiet-hours.tsx
 #: src/components/systems-table/systems-table-columns.tsx
 msgid "Edit"
@@ -664,6 +680,10 @@ msgstr "Uredi"
 #: src/components/routes/settings/quiet-hours.tsx
 msgid "Edit {foo}"
 msgstr "Uredi {foo}"
+
+#: src/components/announcement-banner.tsx
+msgid "Edit announcement"
+msgstr ""
 
 #: src/components/login/auth-form.tsx
 #: src/components/login/forgot-pass-form.tsx
@@ -777,6 +797,10 @@ msgstr "Neuspeli atributi:"
 #: src/lib/api.ts
 msgid "Failed to authenticate"
 msgstr "Preverjanje pristnosti ni uspelo"
+
+#: src/components/announcement-banner.tsx
+msgid "Failed to save announcement"
+msgstr ""
 
 #: src/components/routes/settings/layout.tsx
 #: src/components/routes/settings/notifications.tsx
@@ -988,6 +1012,15 @@ msgstr "Stanje nalaganja"
 #: src/components/systemd-table/systemd-table.tsx
 msgid "Loading..."
 msgstr "Nalaganje..."
+
+#. System metadata label
+#. System metadata label
+#. System metadata label
+#: src/components/add-system.tsx
+#: src/components/routes/system/info-bar.tsx
+#: src/components/systems-table/systems-table.tsx
+msgid "Location"
+msgstr ""
 
 #: src/components/navbar.tsx
 msgid "Log Out"
@@ -1383,6 +1416,10 @@ msgstr "S.M.A.R.T. podrobnosti"
 msgid "S.M.A.R.T. Self-Test"
 msgstr "S.M.A.R.T. samotestiranje"
 
+#: src/components/announcement-banner.tsx
+msgid "Save"
+msgstr ""
+
 #: src/components/routes/settings/notifications.tsx
 msgid "Save address using enter key or comma. Leave blank to disable email notifications."
 msgstr "Shranite naslov s tipko enter ali vejico. Pustite prazno, da onemogočite e-poštna obvestila."
@@ -1593,6 +1630,10 @@ msgstr "Testni srčni utrip"
 msgid "Test notification sent"
 msgstr "Testno obvestilo je poslano"
 
+#: src/components/announcement-banner.tsx
+msgid "The announcement is now visible to all users."
+msgstr ""
+
 #: src/components/routes/settings/heartbeat.tsx
 msgid "The overall status is <0>ok</0> when all systems are up, <1>warn</1> when alerts are triggered, and <2>error</2> when any system is down."
 msgstr "Splošno stanje je <0>v redu</0>, ko vsi sistemi delujejo, <1>opozorilo</1>, ko se sprožijo opozorila, in <2>napaka</2>, ko kateri koli sistem ne deluje."
@@ -1601,9 +1642,17 @@ msgstr "Splošno stanje je <0>v redu</0>, ko vsi sistemi delujejo, <1>opozorilo<
 msgid "Then log into the backend and reset your user account password in the users table."
 msgstr "Nato se prijavite v zaledni sistem in ponastavite geslo svojega uporabniškega računa v tabeli uporabnikov."
 
+#: src/components/announcement-banner.tsx
+msgid "There are currently no announcements."
+msgstr ""
+
 #: src/components/systems-table/systems-table-columns.tsx
 msgid "This action cannot be undone. This will permanently delete all current records for {name} from the database."
 msgstr "Tega dejanja ni mogoče razveljaviti. To bo trajno izbrisalo vse trenutne zapise za {name} iz zbirke podatkov."
+
+#: src/components/announcement-banner.tsx
+msgid "This message will be visible to all users."
+msgstr ""
 
 #: src/components/routes/settings/alerts-history-data-table.tsx
 msgid "This will permanently delete all selected records from the database."
@@ -1887,6 +1936,10 @@ msgstr "Ukaz Windows"
 msgid "Write"
 msgstr "Pisanje"
 
+#: src/components/announcement-banner.tsx
+msgid "Write an announcement..."
+msgstr ""
+
 #: src/components/routes/settings/layout.tsx
 msgid "YAML Config"
 msgstr "YAML nastaviitev"
@@ -1904,3 +1957,15 @@ msgstr "Da"
 #: src/components/routes/settings/layout.tsx
 msgid "Your user settings have been updated."
 msgstr "Vaše uporabniške nastavitve so posodobljene."
+
+#: src/components/add-system.tsx
+#: src/components/routes/system/info-bar.tsx
+#: src/components/systems-table/systems-table.tsx
+#~ msgid "位置"
+#~ msgstr ""
+
+#: src/components/add-system.tsx
+#: src/components/routes/system/info-bar.tsx
+#: src/components/systems-table/systems-table.tsx
+#~ msgid "管理员"
+#~ msgstr ""

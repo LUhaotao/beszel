@@ -55,6 +55,14 @@ type ViewMode = "table" | "grid"
 type StatusFilter = "all" | SystemRecord["status"]
 
 const preloadSystemDetail = runOnce(() => import("@/components/routes/system.tsx"))
+const DEFAULT_VIEW_MODE: ViewMode = "grid"
+const VIEW_MODE_STORAGE_KEY = "viewMode"
+const VIEW_MODE_DEFAULTS_VERSION_KEY = "systems-table-view-mode-defaults-version"
+const VIEW_MODE_DEFAULTS_VERSION = 1
+const COLUMN_VISIBILITY_STORAGE_KEY = "cols"
+const COLUMN_VISIBILITY_DEFAULTS_VERSION_KEY = "systems-table-cols-defaults-version"
+const COLUMN_VISIBILITY_DEFAULTS_VERSION = 1
+
 const DEFAULT_COLUMN_VISIBILITY: VisibilityState = {
 	cpu: false,
 	loadAverage: false,
@@ -72,6 +80,30 @@ function mergeDefaultColumnVisibility(value: VisibilityState): VisibilityState {
 	}
 }
 
+function isSameVisibilityState(a: VisibilityState, b: VisibilityState) {
+	const aKeys = Object.keys(a)
+	const bKeys = Object.keys(b)
+	return aKeys.length === bKeys.length && bKeys.every((key) => a[key] === b[key])
+}
+
+function getColumnVisibilityDefaultsVersion(storageInterface: Storage = localStorage) {
+	const saved = storageInterface?.getItem(`besz-${COLUMN_VISIBILITY_DEFAULTS_VERSION_KEY}`)
+	return saved ? Number(saved) || 0 : 0
+}
+
+function setColumnVisibilityDefaultsVersion(version: number, storageInterface: Storage = localStorage) {
+	storageInterface?.setItem(`besz-${COLUMN_VISIBILITY_DEFAULTS_VERSION_KEY}`, String(version))
+}
+
+function getViewModeDefaultsVersion(storageInterface: Storage = localStorage) {
+	const saved = storageInterface?.getItem(`besz-${VIEW_MODE_DEFAULTS_VERSION_KEY}`)
+	return saved ? Number(saved) || 0 : 0
+}
+
+function setViewModeDefaultsVersion(version: number, storageInterface: Storage = localStorage) {
+	storageInterface?.setItem(`besz-${VIEW_MODE_DEFAULTS_VERSION_KEY}`, String(version))
+}
+
 export default function SystemsTable() {
 	const data = useStore($systems)
 	const downSystems = $downSystems.get()
@@ -86,18 +118,31 @@ export default function SystemsTable() {
 		sessionStorage
 	)
 	const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([])
-	const [columnVisibility, setColumnVisibility] = useBrowserStorage<VisibilityState>("cols", DEFAULT_COLUMN_VISIBILITY)
+	const [columnVisibility, setColumnVisibility] = useBrowserStorage<VisibilityState>(
+		COLUMN_VISIBILITY_STORAGE_KEY,
+		DEFAULT_COLUMN_VISIBILITY
+	)
 
 	useEffect(() => {
-		setColumnVisibility((prev) => {
+		const shouldApplyUpdatedDefaults = getColumnVisibilityDefaultsVersion() < COLUMN_VISIBILITY_DEFAULTS_VERSION
+
+		setColumnVisibility((prev: VisibilityState) => {
 			const merged = mergeDefaultColumnVisibility(prev)
-			const prevKeys = Object.keys(prev)
-			const mergedKeys = Object.keys(merged)
-			if (prevKeys.length === mergedKeys.length && mergedKeys.every((key) => prev[key] === merged[key])) {
+
+			if (shouldApplyUpdatedDefaults) {
+				merged.actions = false
+			}
+
+			if (isSameVisibilityState(prev, merged)) {
 				return prev
 			}
+
 			return merged
 		})
+
+		if (shouldApplyUpdatedDefaults) {
+			setColumnVisibilityDefaultsVersion(COLUMN_VISIBILITY_DEFAULTS_VERSION)
+		}
 	}, [setColumnVisibility])
 
 	const locale = i18n.locale
@@ -116,7 +161,17 @@ export default function SystemsTable() {
 		return Object.values(pausedSystems) ?? []
 	}, [data, statusFilter])
 
-	const [viewMode, setViewMode] = useBrowserStorage<ViewMode>("viewMode", "grid")
+	const [viewMode, setViewMode] = useBrowserStorage<ViewMode>(VIEW_MODE_STORAGE_KEY, DEFAULT_VIEW_MODE)
+
+	useEffect(() => {
+		const shouldApplyUpdatedDefaultViewMode = getViewModeDefaultsVersion() < VIEW_MODE_DEFAULTS_VERSION
+		if (!shouldApplyUpdatedDefaultViewMode) {
+			return
+		}
+
+		setViewMode(DEFAULT_VIEW_MODE)
+		setViewModeDefaultsVersion(VIEW_MODE_DEFAULTS_VERSION)
+	}, [setViewMode])
 
 	useEffect(() => {
 		if (filter !== undefined) {
@@ -607,12 +662,12 @@ const SystemCard = memo(
 									<div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 ps-4.5 text-xs text-muted-foreground">
 										{system.device_admin && (
 											<span className="truncate">
-												<Trans>管理员</Trans>：{system.device_admin}
+												<Trans comment="System metadata label">Administrator</Trans>：{system.device_admin}
 											</span>
 										)}
 										{system.location && (
 											<span className="truncate">
-												<Trans>位置</Trans>：{system.location}
+												<Trans comment="System metadata label">Location</Trans>：{system.location}
 											</span>
 										)}
 									</div>

@@ -161,6 +161,15 @@ msgstr "Налаштувати ширину основного макету"
 msgid "Admin"
 msgstr "Адміністратор"
 
+#. System metadata label
+#. System metadata label
+#. System metadata label
+#: src/components/add-system.tsx
+#: src/components/routes/system/info-bar.tsx
+#: src/components/systems-table/systems-table.tsx
+msgid "Administrator"
+msgstr ""
+
 #: src/components/systemd-table/systemd-table.tsx
 msgid "After"
 msgstr "Після"
@@ -199,6 +208,10 @@ msgstr "Всі контейнери"
 #: src/components/systems-table/systems-table.tsx
 msgid "All Systems"
 msgstr "Всі системи"
+
+#: src/components/announcement-banner.tsx
+msgid "Announcement saved"
+msgstr ""
 
 #: src/components/systems-table/systems-table-columns.tsx
 msgid "Are you sure you want to delete {name}?"
@@ -328,6 +341,7 @@ msgstr "Може запустити"
 msgid "Can stop"
 msgstr "Може зупинити"
 
+#: src/components/announcement-banner.tsx
 #: src/components/routes/settings/alerts-history-data-table.tsx
 #: src/components/routes/settings/quiet-hours.tsx
 #: src/components/systems-table/systems-table-columns.tsx
@@ -375,6 +389,7 @@ msgstr "Параметри графіків"
 msgid "Check {email} for a reset link."
 msgstr "Перевірте {email} для отримання посилання на скидання."
 
+#: src/components/announcement-banner.tsx
 #: src/components/routes/settings/layout.tsx
 msgid "Check logs for more details."
 msgstr "Перевірте журнали для отримання додаткової інформації."
@@ -655,6 +670,7 @@ msgstr "Завантажити"
 msgid "Duration"
 msgstr "Тривалість"
 
+#: src/components/announcement-banner.tsx
 #: src/components/routes/settings/quiet-hours.tsx
 #: src/components/systems-table/systems-table-columns.tsx
 msgid "Edit"
@@ -664,6 +680,10 @@ msgstr "Редагувати"
 #: src/components/routes/settings/quiet-hours.tsx
 msgid "Edit {foo}"
 msgstr "Редагувати {foo}"
+
+#: src/components/announcement-banner.tsx
+msgid "Edit announcement"
+msgstr ""
 
 #: src/components/login/auth-form.tsx
 #: src/components/login/forgot-pass-form.tsx
@@ -777,6 +797,10 @@ msgstr "Невдалі атрибути:"
 #: src/lib/api.ts
 msgid "Failed to authenticate"
 msgstr "Не вдалося автентифікувати"
+
+#: src/components/announcement-banner.tsx
+msgid "Failed to save announcement"
+msgstr ""
 
 #: src/components/routes/settings/layout.tsx
 #: src/components/routes/settings/notifications.tsx
@@ -988,6 +1012,15 @@ msgstr "Стан завантаження"
 #: src/components/systemd-table/systemd-table.tsx
 msgid "Loading..."
 msgstr "Завантаження..."
+
+#. System metadata label
+#. System metadata label
+#. System metadata label
+#: src/components/add-system.tsx
+#: src/components/routes/system/info-bar.tsx
+#: src/components/systems-table/systems-table.tsx
+msgid "Location"
+msgstr ""
 
 #: src/components/navbar.tsx
 msgid "Log Out"
@@ -1383,6 +1416,10 @@ msgstr "Деталі S.M.A.R.T."
 msgid "S.M.A.R.T. Self-Test"
 msgstr "Самодіагностика S.M.A.R.T."
 
+#: src/components/announcement-banner.tsx
+msgid "Save"
+msgstr ""
+
 #: src/components/routes/settings/notifications.tsx
 msgid "Save address using enter key or comma. Leave blank to disable email notifications."
 msgstr "Збережіть адресу, використовуючи клавішу Enter або кому. Залиште порожнім, щоб вимкнути сповіщення електронною поштою."
@@ -1593,6 +1630,10 @@ msgstr "Тестовий heartbeat"
 msgid "Test notification sent"
 msgstr "Тестове сповіщення надіслано"
 
+#: src/components/announcement-banner.tsx
+msgid "The announcement is now visible to all users."
+msgstr ""
+
 #: src/components/routes/settings/heartbeat.tsx
 msgid "The overall status is <0>ok</0> when all systems are up, <1>warn</1> when alerts are triggered, and <2>error</2> when any system is down."
 msgstr "Загальний статус: <0>ok</0>, коли всі системи працюють, <1>попередження</1>, коли спрацювали сповіщення, і <2>помилка</2>, коли будь-яка система відключена."
@@ -1601,9 +1642,17 @@ msgstr "Загальний статус: <0>ok</0>, коли всі систем
 msgid "Then log into the backend and reset your user account password in the users table."
 msgstr "Потім увійдіть у бекенд і скиньте пароль вашого облікового запису користувача в таблиці користувачів."
 
+#: src/components/announcement-banner.tsx
+msgid "There are currently no announcements."
+msgstr ""
+
 #: src/components/systems-table/systems-table-columns.tsx
 msgid "This action cannot be undone. This will permanently delete all current records for {name} from the database."
 msgstr "Цю дію не можна скасувати. Це назавжди видалить всі поточні записи для {name} з бази даних."
+
+#: src/components/announcement-banner.tsx
+msgid "This message will be visible to all users."
+msgstr ""
 
 #: src/components/routes/settings/alerts-history-data-table.tsx
 msgid "This will permanently delete all selected records from the database."
@@ -1887,6 +1936,10 @@ msgstr "Команда Windows"
 msgid "Write"
 msgstr "Запис"
 
+#: src/components/announcement-banner.tsx
+msgid "Write an announcement..."
+msgstr ""
+
 #: src/components/routes/settings/layout.tsx
 msgid "YAML Config"
 msgstr "Конфігурація YAML"
@@ -1904,3 +1957,15 @@ msgstr "Так"
 #: src/components/routes/settings/layout.tsx
 msgid "Your user settings have been updated."
 msgstr "Ваші налаштування користувача були оновлені."
+
+#: src/components/add-system.tsx
+#: src/components/routes/system/info-bar.tsx
+#: src/components/systems-table/systems-table.tsx
+#~ msgid "位置"
+#~ msgstr ""
+
+#: src/components/add-system.tsx
+#: src/components/routes/system/info-bar.tsx
+#: src/components/systems-table/systems-table.tsx
+#~ msgid "管理员"
+#~ msgstr ""

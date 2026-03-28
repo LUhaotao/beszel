@@ -161,6 +161,15 @@ msgstr "Ajustar el ancho del diseño principal"
 msgid "Admin"
 msgstr "Administrador"
 
+#. System metadata label
+#. System metadata label
+#. System metadata label
+#: src/components/add-system.tsx
+#: src/components/routes/system/info-bar.tsx
+#: src/components/systems-table/systems-table.tsx
+msgid "Administrator"
+msgstr ""
+
 #: src/components/systemd-table/systemd-table.tsx
 msgid "After"
 msgstr "Después"
@@ -199,6 +208,10 @@ msgstr "Todos los contenedores"
 #: src/components/systems-table/systems-table.tsx
 msgid "All Systems"
 msgstr "Todos los sistemas"
+
+#: src/components/announcement-banner.tsx
+msgid "Announcement saved"
+msgstr ""
 
 #: src/components/systems-table/systems-table-columns.tsx
 msgid "Are you sure you want to delete {name}?"
@@ -328,6 +341,7 @@ msgstr "Puede iniciarse"
 msgid "Can stop"
 msgstr "Puede detenerse"
 
+#: src/components/announcement-banner.tsx
 #: src/components/routes/settings/alerts-history-data-table.tsx
 #: src/components/routes/settings/quiet-hours.tsx
 #: src/components/systems-table/systems-table-columns.tsx
@@ -375,6 +389,7 @@ msgstr "Opciones de gráficos"
 msgid "Check {email} for a reset link."
 msgstr "Revisa {email} para un enlace de restablecimiento."
 
+#: src/components/announcement-banner.tsx
 #: src/components/routes/settings/layout.tsx
 msgid "Check logs for more details."
 msgstr "Revisa los registros para más detalles."
@@ -655,6 +670,7 @@ msgstr "Descargar"
 msgid "Duration"
 msgstr "Duración"
 
+#: src/components/announcement-banner.tsx
 #: src/components/routes/settings/quiet-hours.tsx
 #: src/components/systems-table/systems-table-columns.tsx
 msgid "Edit"
@@ -664,6 +680,10 @@ msgstr "Editar"
 #: src/components/routes/settings/quiet-hours.tsx
 msgid "Edit {foo}"
 msgstr "Editar {foo}"
+
+#: src/components/announcement-banner.tsx
+msgid "Edit announcement"
+msgstr ""
 
 #: src/components/login/auth-form.tsx
 #: src/components/login/forgot-pass-form.tsx
@@ -777,6 +797,10 @@ msgstr "Atributos fallidos:"
 #: src/lib/api.ts
 msgid "Failed to authenticate"
 msgstr "Error al autenticar"
+
+#: src/components/announcement-banner.tsx
+msgid "Failed to save announcement"
+msgstr ""
 
 #: src/components/routes/settings/layout.tsx
 #: src/components/routes/settings/notifications.tsx
@@ -988,6 +1012,15 @@ msgstr "Estado de carga"
 #: src/components/systemd-table/systemd-table.tsx
 msgid "Loading..."
 msgstr "Cargando..."
+
+#. System metadata label
+#. System metadata label
+#. System metadata label
+#: src/components/add-system.tsx
+#: src/components/routes/system/info-bar.tsx
+#: src/components/systems-table/systems-table.tsx
+msgid "Location"
+msgstr ""
 
 #: src/components/navbar.tsx
 msgid "Log Out"
@@ -1383,6 +1416,10 @@ msgstr "Detalles S.M.A.R.T."
 msgid "S.M.A.R.T. Self-Test"
 msgstr "Autoprueba S.M.A.R.T."
 
+#: src/components/announcement-banner.tsx
+msgid "Save"
+msgstr ""
+
 #: src/components/routes/settings/notifications.tsx
 msgid "Save address using enter key or comma. Leave blank to disable email notifications."
 msgstr "Guarda la dirección usando la tecla enter o coma. Deja en blanco para desactivar las notificaciones por correo."
@@ -1593,6 +1630,10 @@ msgstr "Probar latido"
 msgid "Test notification sent"
 msgstr "Notificación de prueba enviada"
 
+#: src/components/announcement-banner.tsx
+msgid "The announcement is now visible to all users."
+msgstr ""
+
 #: src/components/routes/settings/heartbeat.tsx
 msgid "The overall status is <0>ok</0> when all systems are up, <1>warn</1> when alerts are triggered, and <2>error</2> when any system is down."
 msgstr "El estado general es <0>ok</0> cuando todos los sistemas están activos, <1>warn</1> cuando se activan alertas y <2>error</2> cuando algún sistema está caído."
@@ -1601,9 +1642,17 @@ msgstr "El estado general es <0>ok</0> cuando todos los sistemas están activos,
 msgid "Then log into the backend and reset your user account password in the users table."
 msgstr "Luego inicia sesión en el backend y restablece la contraseña de tu cuenta de usuario en la tabla de usuarios."
 
+#: src/components/announcement-banner.tsx
+msgid "There are currently no announcements."
+msgstr ""
+
 #: src/components/systems-table/systems-table-columns.tsx
 msgid "This action cannot be undone. This will permanently delete all current records for {name} from the database."
 msgstr "Esta acción no se puede deshacer. Esto eliminará permanentemente todos los registros actuales de {name} de la base de datos."
+
+#: src/components/announcement-banner.tsx
+msgid "This message will be visible to all users."
+msgstr ""
 
 #: src/components/routes/settings/alerts-history-data-table.tsx
 msgid "This will permanently delete all selected records from the database."
@@ -1887,6 +1936,10 @@ msgstr "Comando Windows"
 msgid "Write"
 msgstr "Escritura"
 
+#: src/components/announcement-banner.tsx
+msgid "Write an announcement..."
+msgstr ""
+
 #: src/components/routes/settings/layout.tsx
 msgid "YAML Config"
 msgstr "Configuración YAML"
@@ -1904,3 +1957,15 @@ msgstr "Sí"
 #: src/components/routes/settings/layout.tsx
 msgid "Your user settings have been updated."
 msgstr "Tu configuración de usuario ha sido actualizada."
+
+#: src/components/add-system.tsx
+#: src/components/routes/system/info-bar.tsx
+#: src/components/systems-table/systems-table.tsx
+#~ msgid "位置"
+#~ msgstr ""
+
+#: src/components/add-system.tsx
+#: src/components/routes/system/info-bar.tsx
+#: src/components/systems-table/systems-table.tsx
+#~ msgid "管理员"
+#~ msgstr ""

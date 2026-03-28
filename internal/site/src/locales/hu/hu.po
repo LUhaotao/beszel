@@ -161,6 +161,15 @@ msgstr "A fő elrendezés szélességének beállítása"
 msgid "Admin"
 msgstr "Adminisztráció"
 
+#. System metadata label
+#. System metadata label
+#. System metadata label
+#: src/components/add-system.tsx
+#: src/components/routes/system/info-bar.tsx
+#: src/components/systems-table/systems-table.tsx
+msgid "Administrator"
+msgstr ""
+
 #: src/components/systemd-table/systemd-table.tsx
 msgid "After"
 msgstr "Utána"
@@ -199,6 +208,10 @@ msgstr "Minden konténer"
 #: src/components/systems-table/systems-table.tsx
 msgid "All Systems"
 msgstr "Minden rendszer"
+
+#: src/components/announcement-banner.tsx
+msgid "Announcement saved"
+msgstr ""
 
 #: src/components/systems-table/systems-table-columns.tsx
 msgid "Are you sure you want to delete {name}?"
@@ -328,6 +341,7 @@ msgstr "Indítható"
 msgid "Can stop"
 msgstr "Leállítható"
 
+#: src/components/announcement-banner.tsx
 #: src/components/routes/settings/alerts-history-data-table.tsx
 #: src/components/routes/settings/quiet-hours.tsx
 #: src/components/systems-table/systems-table-columns.tsx
@@ -375,6 +389,7 @@ msgstr "Diagram beállítások"
 msgid "Check {email} for a reset link."
 msgstr "Ellenőrizd a {email} címet a visszaállító linkért."
 
+#: src/components/announcement-banner.tsx
 #: src/components/routes/settings/layout.tsx
 msgid "Check logs for more details."
 msgstr "Ellenőrizd a naplót a további részletekért."
@@ -655,6 +670,7 @@ msgstr "Letöltés"
 msgid "Duration"
 msgstr "Időtartam"
 
+#: src/components/announcement-banner.tsx
 #: src/components/routes/settings/quiet-hours.tsx
 #: src/components/systems-table/systems-table-columns.tsx
 msgid "Edit"
@@ -664,6 +680,10 @@ msgstr "Szerkesztés"
 #: src/components/routes/settings/quiet-hours.tsx
 msgid "Edit {foo}"
 msgstr "Szerkesztés {foo}"
+
+#: src/components/announcement-banner.tsx
+msgid "Edit announcement"
+msgstr ""
 
 #: src/components/login/auth-form.tsx
 #: src/components/login/forgot-pass-form.tsx
@@ -777,6 +797,10 @@ msgstr "Sikertelen attribútumok:"
 #: src/lib/api.ts
 msgid "Failed to authenticate"
 msgstr "Hitelesítés sikertelen"
+
+#: src/components/announcement-banner.tsx
+msgid "Failed to save announcement"
+msgstr ""
 
 #: src/components/routes/settings/layout.tsx
 #: src/components/routes/settings/notifications.tsx
@@ -988,6 +1012,15 @@ msgstr "Betöltési állapot"
 #: src/components/systemd-table/systemd-table.tsx
 msgid "Loading..."
 msgstr "Betöltés..."
+
+#. System metadata label
+#. System metadata label
+#. System metadata label
+#: src/components/add-system.tsx
+#: src/components/routes/system/info-bar.tsx
+#: src/components/systems-table/systems-table.tsx
+msgid "Location"
+msgstr ""
 
 #: src/components/navbar.tsx
 msgid "Log Out"
@@ -1383,6 +1416,10 @@ msgstr "S.M.A.R.T. Részletek"
 msgid "S.M.A.R.T. Self-Test"
 msgstr "S.M.A.R.T. Önteszt"
 
+#: src/components/announcement-banner.tsx
+msgid "Save"
+msgstr ""
+
 #: src/components/routes/settings/notifications.tsx
 msgid "Save address using enter key or comma. Leave blank to disable email notifications."
 msgstr "Mentse el a címet az Enter billentyű vagy a vessző használatával. Hagyja üresen az e-mail értesítések letiltásához."
@@ -1593,6 +1630,10 @@ msgstr "Teszt heartbeat"
 msgid "Test notification sent"
 msgstr "Teszt értesítés elküldve"
 
+#: src/components/announcement-banner.tsx
+msgid "The announcement is now visible to all users."
+msgstr ""
+
 #: src/components/routes/settings/heartbeat.tsx
 msgid "The overall status is <0>ok</0> when all systems are up, <1>warn</1> when alerts are triggered, and <2>error</2> when any system is down."
 msgstr "Az összesített állapot <0>ok</0>, ha minden rendszer fut, <1>warn</1>, ha riasztások léptek fel, és <2>error</2>, ha bármelyik rendszer leállt."
@@ -1601,9 +1642,17 @@ msgstr "Az összesített állapot <0>ok</0>, ha minden rendszer fut, <1>warn</1>
 msgid "Then log into the backend and reset your user account password in the users table."
 msgstr "Ezután jelentkezzen be a backendbe, és állítsa vissza a felhasználói fiók jelszavát a felhasználók táblázatban."
 
+#: src/components/announcement-banner.tsx
+msgid "There are currently no announcements."
+msgstr ""
+
 #: src/components/systems-table/systems-table-columns.tsx
 msgid "This action cannot be undone. This will permanently delete all current records for {name} from the database."
 msgstr "Ezt a műveletet nem lehet visszavonni! Véglegesen törli a {name} összes jelenlegi rekordját az adatbázisból!"
+
+#: src/components/announcement-banner.tsx
+msgid "This message will be visible to all users."
+msgstr ""
 
 #: src/components/routes/settings/alerts-history-data-table.tsx
 msgid "This will permanently delete all selected records from the database."
@@ -1887,6 +1936,10 @@ msgstr "Windows parancs"
 msgid "Write"
 msgstr "Írás"
 
+#: src/components/announcement-banner.tsx
+msgid "Write an announcement..."
+msgstr ""
+
 #: src/components/routes/settings/layout.tsx
 msgid "YAML Config"
 msgstr "YAML konfiguráció"
@@ -1904,3 +1957,15 @@ msgstr "Igen"
 #: src/components/routes/settings/layout.tsx
 msgid "Your user settings have been updated."
 msgstr "A felhasználói beállítások frissítésre kerültek."
+
+#: src/components/add-system.tsx
+#: src/components/routes/system/info-bar.tsx
+#: src/components/systems-table/systems-table.tsx
+#~ msgid "位置"
+#~ msgstr ""
+
+#: src/components/add-system.tsx
+#: src/components/routes/system/info-bar.tsx
+#: src/components/systems-table/systems-table.tsx
+#~ msgid "管理员"
+#~ msgstr ""

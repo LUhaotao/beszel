@@ -244,6 +244,14 @@ export interface AlertRecord extends RecordModel {
 	// user: string
 }
 
+export interface AnnouncementRecord extends RecordModel {
+	id: string
+	key: string
+	content: string
+	created: string
+	updated: string
+}
+
 export interface AlertsHistoryRecord extends RecordModel {
 	alert: string
 	user: string

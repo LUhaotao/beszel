@@ -106,6 +106,15 @@ func setCollectionAuthSettings(app core.App) error {
 		return err
 	}
 
+	if err := applyCollectionRules(app, []string{"announcements"}, collectionRules{
+		list:   &authenticatedRule,
+		view:   &authenticatedRule,
+		create: &authenticatedRule,
+		update: &authenticatedRule,
+	}); err != nil {
+		return err
+	}
+
 	return nil
 }
 

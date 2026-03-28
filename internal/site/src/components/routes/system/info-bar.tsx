@@ -84,13 +84,13 @@ export default function InfoBar({
 			{
 				value: system.location,
 				Icon: MapPinIcon,
-				label: t`位置`,
+				label: t({ message: "Location", comment: "System metadata label" }),
 				hide: !system.location,
 			},
 			{
 				value: system.device_admin,
 				Icon: UserIcon,
-				label: t`管理员`,
+				label: t({ message: "Administrator", comment: "System metadata label" }),
 				hide: !system.device_admin,
 			},
 			{

@@ -161,6 +161,15 @@ msgstr "Upravit šířku hlavního rozvržení"
 msgid "Admin"
 msgstr "Administrátor"
 
+#. System metadata label
+#. System metadata label
+#. System metadata label
+#: src/components/add-system.tsx
+#: src/components/routes/system/info-bar.tsx
+#: src/components/systems-table/systems-table.tsx
+msgid "Administrator"
+msgstr ""
+
 #: src/components/systemd-table/systemd-table.tsx
 msgid "After"
 msgstr "Po"
@@ -199,6 +208,10 @@ msgstr "Všechny kontejnery"
 #: src/components/systems-table/systems-table.tsx
 msgid "All Systems"
 msgstr "Všechny systémy"
+
+#: src/components/announcement-banner.tsx
+msgid "Announcement saved"
+msgstr ""
 
 #: src/components/systems-table/systems-table-columns.tsx
 msgid "Are you sure you want to delete {name}?"
@@ -328,6 +341,7 @@ msgstr "Může spustit"
 msgid "Can stop"
 msgstr "Může zastavit"
 
+#: src/components/announcement-banner.tsx
 #: src/components/routes/settings/alerts-history-data-table.tsx
 #: src/components/routes/settings/quiet-hours.tsx
 #: src/components/systems-table/systems-table-columns.tsx
@@ -375,6 +389,7 @@ msgstr "Možnosti grafu"
 msgid "Check {email} for a reset link."
 msgstr "Zkontrolujte {email} pro odkaz na obnovení."
 
+#: src/components/announcement-banner.tsx
 #: src/components/routes/settings/layout.tsx
 msgid "Check logs for more details."
 msgstr "Pro více informací zkontrolujte logy."
@@ -655,6 +670,7 @@ msgstr "Stažení"
 msgid "Duration"
 msgstr "Doba trvání"
 
+#: src/components/announcement-banner.tsx
 #: src/components/routes/settings/quiet-hours.tsx
 #: src/components/systems-table/systems-table-columns.tsx
 msgid "Edit"
@@ -664,6 +680,10 @@ msgstr "Upravit"
 #: src/components/routes/settings/quiet-hours.tsx
 msgid "Edit {foo}"
 msgstr "Upravit {foo}"
+
+#: src/components/announcement-banner.tsx
+msgid "Edit announcement"
+msgstr ""
 
 #: src/components/login/auth-form.tsx
 #: src/components/login/forgot-pass-form.tsx
@@ -777,6 +797,10 @@ msgstr "Neúspěšné atributy:"
 #: src/lib/api.ts
 msgid "Failed to authenticate"
 msgstr "Ověření se nezdařilo"
+
+#: src/components/announcement-banner.tsx
+msgid "Failed to save announcement"
+msgstr ""
 
 #: src/components/routes/settings/layout.tsx
 #: src/components/routes/settings/notifications.tsx
@@ -988,6 +1012,15 @@ msgstr "Stav načtení"
 #: src/components/systemd-table/systemd-table.tsx
 msgid "Loading..."
 msgstr "Načítání..."
+
+#. System metadata label
+#. System metadata label
+#. System metadata label
+#: src/components/add-system.tsx
+#: src/components/routes/system/info-bar.tsx
+#: src/components/systems-table/systems-table.tsx
+msgid "Location"
+msgstr ""
 
 #: src/components/navbar.tsx
 msgid "Log Out"
@@ -1383,6 +1416,10 @@ msgstr "S.M.A.R.T. Detaily"
 msgid "S.M.A.R.T. Self-Test"
 msgstr "S.M.A.R.T. Vlastní test"
 
+#: src/components/announcement-banner.tsx
+msgid "Save"
+msgstr ""
+
 #: src/components/routes/settings/notifications.tsx
 msgid "Save address using enter key or comma. Leave blank to disable email notifications."
 msgstr "Adresu uložte pomocí klávesy enter nebo čárky. Pro deaktivaci e-mailových oznámení ponechte prázdné pole."
@@ -1593,6 +1630,10 @@ msgstr "Testovat heartbeat"
 msgid "Test notification sent"
 msgstr "Testovací oznámení odesláno"
 
+#: src/components/announcement-banner.tsx
+msgid "The announcement is now visible to all users."
+msgstr ""
+
 #: src/components/routes/settings/heartbeat.tsx
 msgid "The overall status is <0>ok</0> when all systems are up, <1>warn</1> when alerts are triggered, and <2>error</2> when any system is down."
 msgstr "Celkový stav je <0>ok</0>, když jsou všechny systémy v provozu, <1>warn</1>, když jsou spuštěny výstrahy, a <2>error</2>, když je některý systém mimo provoz."
@@ -1601,9 +1642,17 @@ msgstr "Celkový stav je <0>ok</0>, když jsou všechny systémy v provozu, <1>w
 msgid "Then log into the backend and reset your user account password in the users table."
 msgstr "Poté se přihlaste do backendu a obnovte heslo k uživatelskému účtu v tabulce uživatelů."
 
+#: src/components/announcement-banner.tsx
+msgid "There are currently no announcements."
+msgstr ""
+
 #: src/components/systems-table/systems-table-columns.tsx
 msgid "This action cannot be undone. This will permanently delete all current records for {name} from the database."
 msgstr "Tuto akci nelze vzít zpět. Tím se z databáze trvale odstraní všechny aktuální záznamy pro {name}."
+
+#: src/components/announcement-banner.tsx
+msgid "This message will be visible to all users."
+msgstr ""
 
 #: src/components/routes/settings/alerts-history-data-table.tsx
 msgid "This will permanently delete all selected records from the database."
@@ -1887,6 +1936,10 @@ msgstr "Windows příkaz"
 msgid "Write"
 msgstr "Psát"
 
+#: src/components/announcement-banner.tsx
+msgid "Write an announcement..."
+msgstr ""
+
 #: src/components/routes/settings/layout.tsx
 msgid "YAML Config"
 msgstr "YAML konfigurace"
@@ -1904,3 +1957,15 @@ msgstr "Ano"
 #: src/components/routes/settings/layout.tsx
 msgid "Your user settings have been updated."
 msgstr "Vaše uživatelská nastavení byla aktualizována."
+
+#: src/components/add-system.tsx
+#: src/components/routes/system/info-bar.tsx
+#: src/components/systems-table/systems-table.tsx
+#~ msgid "位置"
+#~ msgstr ""
+
+#: src/components/add-system.tsx
+#: src/components/routes/system/info-bar.tsx
+#: src/components/systems-table/systems-table.tsx
+#~ msgid "管理员"
+#~ msgstr ""
